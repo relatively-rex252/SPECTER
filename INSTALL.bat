@@ -1,6 +1,6 @@
 @echo off
 echo ============================================
-echo   REX - Responsive Execution eXpert
+echo   SPECTER - Smart Personal Execution Command Technology Enhanced Responder
 echo   Installing dependencies...
 echo ============================================
 echo.
