@@ -192,7 +192,7 @@ def close_app(app_name):
         "excel":        "EXCEL.EXE",
         "powerpoint":   "POWERPNT.EXE",
         "whatsapp":     "WhatsApp.exe",
-        "brave":        "Brave.exe"
+        "brave":        "Brave.exe",
     }
 
     app_lower = app_name.lower().strip()
