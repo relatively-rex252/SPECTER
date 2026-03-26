@@ -1,142 +1,84 @@
-# 👻 SPECTER
-### Smart Personal Execution Command Technology Enhanced Responder
-
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)
-![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?style=for-the-badge&logo=windows)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
-
-> A voice-activated personal AI assistant for Windows — say **"Specter"** and it executes your commands instantly.
+# SPECTER - Smart Personal Execution Command Technology Enhanced Responder
+### Your Personal PC Voice Assistant
 
 ---
 
-## 🎯 What is SPECTER?
+## HOW TO SET UP
 
-SPECTER is a lightweight, offline-friendly voice assistant for Windows PCs. No Cortana, no Alexa, no subscriptions — just say the wake word and SPECTER gets to work. Open apps, control your system, search the web, adjust volume and brightness, all by voice.
-
-Built with Python. Runs in the background. Completely yours.
-
----
-
-## ✨ Features
-
-- 🎙️ **Wake Word Detection** — Just say *"Specter"* to activate
-- 📂 **App Control** — Open and close any application by voice
-- 🔊 **Volume Control** — Turn up, turn down, mute, or set exact level
-- 💡 **Brightness Control** — Adjust screen brightness by voice
-- 🔍 **Web Search** — Search Google or open any website hands-free
-- 🖥️ **System Commands** — Lock, sleep, shutdown, restart, screenshot
-- 🕐 **Time & Date** — Ask SPECTER what time or date it is
-- 💬 **Voice Feedback** — SPECTER talks back to you
+1. Run `INSTALL.bat` first (only once)
+2. Run `START_SPECTER.bat` to launch SPECTER
+3. Say **"Specter"** to wake him up
+4. Give your command!
 
 ---
 
-## 🚀 Getting Started
+## VOICE COMMANDS
 
-### Requirements
-- Windows 10 or 11
-- Python 3.8 or higher → [Download Python](https://python.org)
-- A working microphone
-- Internet connection (for speech recognition)
+### 📂 Open Apps
+- "Specter, open Chrome"
+- "Specter, open Notepad"
+- "Specter, open Spotify"
+- "Specter, open Discord"
+- "Specter, open VS Code"
+- "Specter, open WhatsApp"
+- "Specter, open Calculator"
+- "Specter, open File Explorer"
 
-### Installation
+### ❌ Close Apps
+- "Specter, close Chrome"
+- "Specter, close Spotify"
+- "Specter, kill Discord"
 
-**1. Clone the repository**
-```bash
-git clone https://github.com/relatively-rex252/SPECTER.git
-cd SPECTER
-```
+### 🔊 Volume
+- "Specter, volume up"
+- "Specter, volume down"
+- "Specter, mute"
+- "Specter, set volume to 50"
 
-**2. Install dependencies**
+### 💡 Brightness
+- "Specter, set brightness to 70"
+- "Specter, increase brightness"
+- "Specter, decrease brightness"
 
-Simply double-click `INSTALL.bat` — it handles everything automatically.
+### 🔍 Web Search
+- "Specter, search for Real Madrid"
+- "Specter, search for War Thunder tips"
+- "Specter, open YouTube"
+- "Specter, open GitHub"
 
-Or manually via pip:
-```bash
-pip install SpeechRecognition pyttsx3 pyaudio
-```
+### 🖥️ System
+- "Specter, what time is it"
+- "Specter, what's today's date"
+- "Specter, take a screenshot"
+- "Specter, lock my PC"
+- "Specter, sleep"
+- "Specter, shutdown" (10 second delay)
+- "Specter, restart"
+- "Specter, cancel shutdown"
 
-**3. Run SPECTER**
-
-Double-click `START_SPECTER.bat` or run:
-```bash
-python specter.py
-```
+### 👋 Exit
+- "Specter, goodbye"
+- "Specter, exit"
 
 ---
 
-## 🗣️ Voice Commands
+## ADDING MORE APPS
 
-| Category | Command Examples |
-|----------|-----------------|
-| **Wake** | *"Specter"* |
-| **Open Apps** | *"Open Chrome"*, *"Open Spotify"*, *"Open VS Code"* |
-| **Close Apps** | *"Close Chrome"*, *"Kill Discord"* |
-| **Volume** | *"Volume up"*, *"Volume down"*, *"Mute"*, *"Set volume to 50"* |
-| **Brightness** | *"Set brightness to 70"*, *"Increase brightness"* |
-| **Web Search** | *"Search for Real Madrid"*, *"Open YouTube"* |
-| **System** | *"Lock my PC"*, *"Sleep"*, *"Shutdown"*, *"Take a screenshot"* |
-| **Info** | *"What time is it"*, *"What's today's date"* |
-| **Exit** | *"Goodbye"*, *"Exit"* |
-
----
-
-## ⚙️ Adding More Apps
-
-Open `specter.py` and find the `APP_MAP` dictionary. Add your app like this:
+Open `specter.py` and find the `APP_MAP` dictionary.
+Add your app like this:
 
 ```python
-APP_MAP = {
-    "your app name": r"C:\full\path\to\your\app.exe",
-}
+"app name": r"C:\full\path\to\app.exe",
 ```
 
 ---
 
-## 🛠️ Built With
-
-- [SpeechRecognition](https://pypi.org/project/SpeechRecognition/) — Voice input
-- [pyttsx3](https://pypi.org/project/pyttsx3/) — Text to speech (offline)
-- [PyAudio](https://pypi.org/project/PyAudio/) — Microphone access
-- [subprocess / os](https://docs.python.org/3/library/subprocess.html) — System control
-
----
-
-## 📁 Project Structure
-
-```
-SPECTER/
-├── specter.py          # Main assistant script
-├── START_SPECTER.bat   # Launch SPECTER
-├── INSTALL.bat         # Install dependencies
-└── README.md           # You are here
-```
+## REQUIREMENTS
+- Windows 10/11
+- Python 3.8+
+- Internet connection (for speech recognition)
+- Microphone
 
 ---
 
-## 🔮 Roadmap
-
-- [ ] System tray icon
-- [ ] Custom wake word training
-- [ ] Weather updates by voice
-- [ ] WhatsApp / messaging integration
-- [ ] GUI dashboard
-- [ ] Offline speech recognition
-
----
-
-## 👤 Author
-
-**Zayed** — [@YOUR_GITHUB](https://github.com/relatively-rex252)
-
-> *"Built because I wanted Bixby, but for my PC."*
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License — feel free to use, modify, and share it.
-
----
-
-⭐ If you found SPECTER useful, leave a star on the repo!
+*Built by Zayed (Rex) — Powered by Python*
